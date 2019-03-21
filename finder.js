@@ -5,7 +5,7 @@ let rFindFiles = (path) =>
     fs.readdirSync(path).map(o => path+'/'+o)
     .map(o => fs.lstatSync(o).isDirectory() ? rFindFiles(o) : [o]).flat();
 
-let mkURL = (path, line) => `https://github.com/FStarLang/FStar/blob/master/ulib/${path}#L${line}`.replace(/^\.\//, '').replace(/\/\//g, '/').replace(/ulib\/ulib/g, 'ulib');
+let mkURL = (path, line) => 'http://'+`github.com/FStarLang/FStar/blob/master/ulib/${path}#L${line}`.replace(/^\.\//, '').replace(/\/\//g, '/').replace(/ulib\/ulib/g, 'ulib');
 let ithrow = x => {throw x;};
 
 let gmatch = (re_, str) => {
