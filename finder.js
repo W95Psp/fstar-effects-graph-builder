@@ -179,7 +179,7 @@ let gz = exportToGraphviz(effects, {
     aliasEffect: {style: 'dotted'},
     reifiable: {shape: 'box'},
     reflectable: {color: '#27ae60', penwidth: '3'},
-    inheritArrow: {color: '#f1c40f'}
+    inheritArrow: {color: '#f6e58d'}
 });
 
 let html = `
