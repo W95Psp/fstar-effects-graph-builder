@@ -9,3 +9,4 @@
 | `sub_effect A = B`                | Yellow arrow              |
 
 
+Path of effects are accessible in tooltips.

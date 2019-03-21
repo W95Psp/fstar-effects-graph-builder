@@ -29,9 +29,15 @@ let find = re => {
     let dicts = files.map(path => {
 	let src = fs.readFileSync(path);
 	let effectsDict = {};
-	let i=gmatch(inhRe, src).map(([_, flags, name, inheritFrom]) =>
-					   ({flags, name, inheritFrom}));
-	let e=gmatch(expRe, src).map(([_, flags, name]) => ({flags, name}));
+
+	let newLineMap = gmatch(/\n/gm, src).map(x => x.index);
+	let getNumberOfLine = tpos => newLineMap.findIndex(nlpos => tpos < nlpos);
+
+	let ff=f=>x=>{let r = f(x); r.line = getNumberOfLine(x.index); return r;};
+	let i=gmatch(inhRe, src).map(ff(([_, flags, name, inheritFrom]) =>
+				       ({flags, name, inheritFrom})));
+	let e=gmatch(expRe, src).map(ff(([_, flags, name]) => ({flags, name})));
+	
 	[...i, ...e].forEach(o => {
 	    o.reflectable = !!o.flags.match('reflectable');
 	    o.reifiable = !!o.flags.match('reifiable');
@@ -108,6 +114,7 @@ let find = re => {
 	if(!dict[Original])
 	    throw ""+Original+" not found (while linking aliases) // in path="+path;
 	let aliasObj = Object.assign({}, dict[Original]);
+	aliasObj.path = path;
 	aliasObj.name = Alias;
 	aliasObj.aliasOf = dict[Original];
 	dict[Alias] = aliasObj;
@@ -126,7 +133,13 @@ let exportToGraphviz = (effects, style) => {
 	let compose = {
 	    style: (a, b) => a + ',' + b
 	};
-	let obj = l.map(x => x && style[x]).filter(x => x)
+	let obj = l.map(x => {
+	    if(x == undefined)
+		return undefined;
+	    if(typeof x == 'object')
+		return x;
+	    return style[x];
+	}).filter(x => x)
 	    .reduce((acc, cur) => {
 		for(let k in cur){
 		    if(acc[k])
@@ -148,7 +161,8 @@ let exportToGraphviz = (effects, style) => {
 	    E.inheritFrom && 'inheritedEffect',
 	    E.tot && 'total',
 	    E.reifiable && 'reifiable',
-	    E.reflectable && 'reflectable'
+	    E.reflectable && 'reflectable',
+	    {tooltip: E.path.substr(givenPath.length).replace(/^\//, '') + ':' + E.line}
 	) + ';\n';
     });
     

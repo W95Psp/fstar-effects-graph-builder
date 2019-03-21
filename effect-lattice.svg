@@ -12,14 +12,20 @@
 <!-- ALL -->
 <g id="node1" class="node">
 <title>ALL</title>
+<g id="a_node1"><a xlink:title="FStar.HyperStack.All.fst:22">
 <ellipse fill="none" stroke="#000000" cx="83" cy="-90" rx="27.8951" ry="18"/>
 <text text-anchor="middle" x="83" y="-86.3" font-family="Times,serif" font-size="14.00" fill="#000000">ALL</text>
+</a>
+</g>
 </g>
 <!-- ALL_h -->
 <g id="node7" class="node">
 <title>ALL_h</title>
+<g id="a_node7"><a xlink:title="FStar.Pervasives.fst:209">
 <ellipse fill="none" stroke="#000000" cx="83" cy="-18" rx="36.2938" ry="18"/>
 <text text-anchor="middle" x="83" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">ALL_h</text>
+</a>
+</g>
 </g>
 <!-- ALL&#45;&gt;ALL_h -->
 <g id="edge43" class="edge">
@@ -30,14 +36,20 @@
 <!-- GST -->
 <g id="node2" class="node">
 <title>GST</title>
+<g id="a_node2"><a xlink:title="FStar.ST.fst:25">
 <ellipse fill="none" stroke="#000000" cx="1013" cy="-234" rx="27.0966" ry="18"/>
 <text text-anchor="middle" x="1013" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">GST</text>
+</a>
+</g>
 </g>
 <!-- STATE -->
 <g id="node3" class="node">
 <title>STATE</title>
+<g id="a_node3"><a xlink:title="reclaimable/FStar.ST.fst:28">
 <ellipse fill="none" stroke="#000000" cx="747" cy="-162" rx="38.1938" ry="18"/>
 <text text-anchor="middle" x="747" y="-158.3" font-family="Times,serif" font-size="14.00" fill="#000000">STATE</text>
+</a>
+</g>
 </g>
 <!-- GST&#45;&gt;STATE -->
 <g id="edge1" class="edge">
@@ -48,8 +60,11 @@
 <!-- STATE_h -->
 <g id="node5" class="node">
 <title>STATE_h</title>
+<g id="a_node5"><a xlink:title="FStar.Pervasives.fst:86">
 <ellipse fill="none" stroke="#000000" cx="900" cy="-90" rx="46.5926" ry="18"/>
 <text text-anchor="middle" x="900" y="-86.3" font-family="Times,serif" font-size="14.00" fill="#000000">STATE_h</text>
+</a>
+</g>
 </g>
 <!-- GST&#45;&gt;STATE_h -->
 <g id="edge44" class="edge">
@@ -72,8 +87,11 @@
 <!-- DIV -->
 <g id="node4" class="node">
 <title>DIV</title>
+<g id="a_node4"><a xlink:title="FStar.Pervasives.fst:23">
 <ellipse fill="none" stroke="#000000" cx="979" cy="-306" rx="27" ry="18"/>
 <text text-anchor="middle" x="979" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">DIV</text>
+</a>
+</g>
 </g>
 <!-- DIV&#45;&gt;GST -->
 <g id="edge3" class="edge">
@@ -90,8 +108,11 @@
 <!-- EXN -->
 <g id="node6" class="node">
 <title>EXN</title>
+<g id="a_node6"><a xlink:title="FStar.Pervasives.fst:141">
 <ellipse fill="none" stroke="#000000" cx="109" cy="-234" rx="28.6953" ry="18"/>
 <text text-anchor="middle" x="109" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">EXN</text>
+</a>
+</g>
 </g>
 <!-- DIV&#45;&gt;EXN -->
 <g id="edge5" class="edge">
@@ -102,8 +123,11 @@
 <!-- READER -->
 <g id="node8" class="node">
 <title>READER</title>
+<g id="a_node8"><a xlink:title="FStar.Reader.fst:81">
 <ellipse fill="none" stroke="#000000" cx="384" cy="-234" rx="46.2923" ry="18"/>
 <text text-anchor="middle" x="384" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">READER</text>
+</a>
+</g>
 </g>
 <!-- DIV&#45;&gt;READER -->
 <g id="edge6" class="edge">
@@ -114,8 +138,11 @@
 <!-- STATE2 -->
 <g id="node10" class="node">
 <title>STATE2</title>
+<g id="a_node10"><a xlink:title="FStar.Relational.Comp.fst:23">
 <ellipse fill="none" stroke="#000000" cx="1232" cy="-162" rx="42.4939" ry="18"/>
 <text text-anchor="middle" x="1232" y="-158.3" font-family="Times,serif" font-size="14.00" fill="#000000">STATE2</text>
+</a>
+</g>
 </g>
 <!-- DIV&#45;&gt;STATE2 -->
 <g id="edge7" class="edge">
@@ -126,8 +153,11 @@
 <!-- TAC -->
 <g id="node11" class="node">
 <title>TAC</title>
+<g id="a_node11"><a xlink:title="FStar.Tactics.Effect.fst:82">
 <ellipse fill="none" stroke="#000000" cx="477" cy="-234" rx="28.6953" ry="18"/>
 <text text-anchor="middle" x="477" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">TAC</text>
+</a>
+</g>
 </g>
 <!-- DIV&#45;&gt;TAC -->
 <g id="edge8" class="edge">
@@ -138,8 +168,11 @@
 <!-- PURE -->
 <g id="node13" class="node">
 <title>PURE</title>
+<g id="a_node13"><a xlink:title="prims.fst:204">
 <ellipse fill="#bae3ff" stroke="#000000" cx="1333" cy="-234" rx="33.2948" ry="18"/>
 <text text-anchor="middle" x="1333" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">PURE</text>
+</a>
+</g>
 </g>
 <!-- DIV&#45;&gt;PURE -->
 <g id="edge46" class="edge">
@@ -162,8 +195,11 @@
 <!-- READER_h -->
 <g id="node9" class="node">
 <title>READER_h</title>
+<g id="a_node9"><a xlink:title="FStar.Reader.fst:67">
 <ellipse fill="none" stroke="#000000" cx="371" cy="-162" rx="54.6905" ry="18"/>
 <text text-anchor="middle" x="371" y="-158.3" font-family="Times,serif" font-size="14.00" fill="#000000">READER_h</text>
+</a>
+</g>
 </g>
 <!-- READER&#45;&gt;READER_h -->
 <g id="edge47" class="edge">
@@ -180,8 +216,11 @@
 <!-- GHOST -->
 <g id="node12" class="node">
 <title>GHOST</title>
+<g id="a_node12"><a xlink:title="prims.fst:229">
 <ellipse fill="#bae3ff" stroke="#000000" cx="1333" cy="-162" rx="40.0939" ry="18"/>
 <text text-anchor="middle" x="1333" y="-158.3" font-family="Times,serif" font-size="14.00" fill="#000000">GHOST</text>
+</a>
+</g>
 </g>
 <!-- GHOST&#45;&gt;PURE -->
 <g id="edge49" class="edge">
@@ -204,8 +243,11 @@
 <!-- All -->
 <g id="node14" class="node">
 <title>All</title>
+<g id="a_node14"><a xlink:title="FStar.All.fst:22">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="137" cy="-162" rx="27" ry="18"/>
 <text text-anchor="middle" x="137" y="-158.3" font-family="Times,serif" font-size="14.00" fill="#000000">All</text>
+</a>
+</g>
 </g>
 <!-- All&#45;&gt;ALL -->
 <g id="edge13" class="edge">
@@ -222,8 +264,11 @@
 <!-- ML -->
 <g id="node15" class="node">
 <title>ML</title>
+<g id="a_node15"><a xlink:title="FStar.All.fst:22">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="27" cy="-162" rx="27" ry="18"/>
 <text text-anchor="middle" x="27" y="-158.3" font-family="Times,serif" font-size="14.00" fill="#000000">ML</text>
+</a>
+</g>
 </g>
 <!-- ML&#45;&gt;ALL -->
 <g id="edge14" class="edge">
@@ -240,8 +285,11 @@
 <!-- Unsafe -->
 <g id="node16" class="node">
 <title>Unsafe</title>
+<g id="a_node16"><a xlink:title="FStar.HyperStack.ST.fsti:28">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="1094" cy="-234" rx="35.9954" ry="18"/>
 <text text-anchor="middle" x="1094" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">Unsafe</text>
+</a>
+</g>
 </g>
 <!-- Unsafe&#45;&gt;STATE -->
 <g id="edge15" class="edge">
@@ -258,8 +306,11 @@
 <!-- Stack -->
 <g id="node17" class="node">
 <title>Stack</title>
+<g id="a_node17"><a xlink:title="FStar.HyperStack.ST.fsti:28">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="251" cy="-234" rx="30.5947" ry="18"/>
 <text text-anchor="middle" x="251" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">Stack</text>
+</a>
+</g>
 </g>
 <!-- Stack&#45;&gt;STATE -->
 <g id="edge16" class="edge">
@@ -276,8 +327,11 @@
 <!-- Heap -->
 <g id="node18" class="node">
 <title>Heap</title>
+<g id="a_node18"><a xlink:title="FStar.HyperStack.ST.fsti:28">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="553" cy="-234" rx="29.4969" ry="18"/>
 <text text-anchor="middle" x="553" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">Heap</text>
+</a>
+</g>
 </g>
 <!-- Heap&#45;&gt;STATE -->
 <g id="edge17" class="edge">
@@ -294,8 +348,11 @@
 <!-- ST -->
 <g id="node19" class="node">
 <title>ST</title>
+<g id="a_node19"><a xlink:title="FStar.HyperStack.ST.fsti:28">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="665" cy="-234" rx="27" ry="18"/>
 <text text-anchor="middle" x="665" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">ST</text>
+</a>
+</g>
 </g>
 <!-- ST&#45;&gt;STATE -->
 <g id="edge18" class="edge">
@@ -312,8 +369,11 @@
 <!-- St -->
 <g id="node20" class="node">
 <title>St</title>
+<g id="a_node20"><a xlink:title="FStar.HyperStack.ST.fsti:28">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="1051" cy="-306" rx="27" ry="18"/>
 <text text-anchor="middle" x="1051" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">St</text>
+</a>
+</g>
 </g>
 <!-- St&#45;&gt;STATE_h -->
 <g id="edge56" class="edge">
@@ -330,8 +390,11 @@
 <!-- StackInline -->
 <g id="node21" class="node">
 <title>StackInline</title>
+<g id="a_node21"><a xlink:title="FStar.HyperStack.ST.fsti:28">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="761" cy="-234" rx="50.8918" ry="18"/>
 <text text-anchor="middle" x="761" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">StackInline</text>
+</a>
+</g>
 </g>
 <!-- StackInline&#45;&gt;STATE -->
 <g id="edge20" class="edge">
@@ -348,8 +411,11 @@
 <!-- Inline -->
 <g id="node22" class="node">
 <title>Inline</title>
+<g id="a_node22"><a xlink:title="FStar.HyperStack.ST.fsti:28">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="861" cy="-234" rx="31.3957" ry="18"/>
 <text text-anchor="middle" x="861" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">Inline</text>
+</a>
+</g>
 </g>
 <!-- Inline&#45;&gt;STATE -->
 <g id="edge21" class="edge">
@@ -366,8 +432,11 @@
 <!-- STL -->
 <g id="node23" class="node">
 <title>STL</title>
+<g id="a_node23"><a xlink:title="FStar.HyperStack.ST.fsti:28">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="230" cy="-306" rx="27" ry="18"/>
 <text text-anchor="middle" x="230" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">STL</text>
+</a>
+</g>
 </g>
 <!-- STL&#45;&gt;STATE_h -->
 <g id="edge59" class="edge">
@@ -384,8 +453,11 @@
 <!-- Div -->
 <g id="node24" class="node">
 <title>Div</title>
+<g id="a_node24"><a xlink:title="FStar.Pervasives.fst:23">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="1077" cy="-378" rx="27" ry="18"/>
 <text text-anchor="middle" x="1077" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">Div</text>
+</a>
+</g>
 </g>
 <!-- Div&#45;&gt;DIV -->
 <g id="edge23" class="edge">
@@ -402,8 +474,11 @@
 <!-- Dv -->
 <g id="node25" class="node">
 <title>Dv</title>
+<g id="a_node25"><a xlink:title="FStar.Pervasives.fst:23">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="1247" cy="-378" rx="27" ry="18"/>
 <text text-anchor="middle" x="1247" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">Dv</text>
+</a>
+</g>
 </g>
 <!-- Dv&#45;&gt;DIV -->
 <g id="edge24" class="edge">
@@ -420,8 +495,11 @@
 <!-- EXT -->
 <g id="node26" class="node">
 <title>EXT</title>
+<g id="a_node26"><a xlink:title="FStar.Pervasives.fst:23">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="1274" cy="-450" rx="27.8951" ry="18"/>
 <text text-anchor="middle" x="1274" y="-446.3" font-family="Times,serif" font-size="14.00" fill="#000000">EXT</text>
+</a>
+</g>
 </g>
 <!-- EXT&#45;&gt;PURE -->
 <g id="edge62" class="edge">
@@ -438,8 +516,11 @@
 <!-- Exn -->
 <g id="node27" class="node">
 <title>Exn</title>
+<g id="a_node27"><a xlink:title="FStar.Pervasives.fst:141">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="109" cy="-306" rx="27" ry="18"/>
 <text text-anchor="middle" x="109" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">Exn</text>
+</a>
+</g>
 </g>
 <!-- Exn&#45;&gt;EXN -->
 <g id="edge26" class="edge">
@@ -450,8 +531,11 @@
 <!-- Ex -->
 <g id="node28" class="node">
 <title>Ex</title>
+<g id="a_node28"><a xlink:title="FStar.Pervasives.fst:141">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="109" cy="-378" rx="27" ry="18"/>
 <text text-anchor="middle" x="109" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">Ex</text>
+</a>
+</g>
 </g>
 <!-- Ex&#45;&gt;Exn -->
 <g id="edge27" class="edge">
@@ -462,8 +546,11 @@
 <!-- STRead -->
 <g id="node29" class="node">
 <title>STRead</title>
+<g id="a_node29"><a xlink:title="FStar.Reader.fst:81">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="331" cy="-306" rx="38.9931" ry="18"/>
 <text text-anchor="middle" x="331" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">STRead</text>
+</a>
+</g>
 </g>
 <!-- STRead&#45;&gt;READER -->
 <g id="edge28" class="edge">
@@ -480,8 +567,11 @@
 <!-- ST2 -->
 <g id="node30" class="node">
 <title>ST2</title>
+<g id="a_node30"><a xlink:title="FStar.Relational.Comp.fst:23">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="1411" cy="-234" rx="27" ry="18"/>
 <text text-anchor="middle" x="1411" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">ST2</text>
+</a>
+</g>
 </g>
 <!-- ST2&#45;&gt;STATE_h -->
 <g id="edge64" class="edge">
@@ -498,8 +588,11 @@
 <!-- St2 -->
 <g id="node31" class="node">
 <title>St2</title>
+<g id="a_node31"><a xlink:title="FStar.Relational.Comp.fst:23">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="1625" cy="-306" rx="27" ry="18"/>
 <text text-anchor="middle" x="1625" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">St2</text>
+</a>
+</g>
 </g>
 <!-- St2&#45;&gt;STATE_h -->
 <g id="edge65" class="edge">
@@ -516,8 +609,11 @@
 <!-- State -->
 <g id="node32" class="node">
 <title>State</title>
+<g id="a_node32"><a xlink:title="FStar.ST.fst:28">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="939" cy="-234" rx="28.6953" ry="18"/>
 <text text-anchor="middle" x="939" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">State</text>
+</a>
+</g>
 </g>
 <!-- State&#45;&gt;STATE -->
 <g id="edge31" class="edge">
@@ -534,8 +630,11 @@
 <!-- TacH -->
 <g id="node33" class="node">
 <title>TacH</title>
+<g id="a_node33"><a xlink:title="FStar.Tactics.Effect.fst:82">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="477" cy="-306" rx="30.5947" ry="18"/>
 <text text-anchor="middle" x="477" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">TacH</text>
+</a>
+</g>
 </g>
 <!-- TacH&#45;&gt;TAC -->
 <g id="edge32" class="edge">
@@ -546,8 +645,11 @@
 <!-- Tac -->
 <g id="node34" class="node">
 <title>Tac</title>
+<g id="a_node34"><a xlink:title="FStar.Tactics.Effect.fst:82">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="403" cy="-378" rx="27" ry="18"/>
 <text text-anchor="middle" x="403" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">Tac</text>
+</a>
+</g>
 </g>
 <!-- Tac&#45;&gt;TacH -->
 <g id="edge33" class="edge">
@@ -558,8 +660,11 @@
 <!-- TacS -->
 <g id="node35" class="node">
 <title>TacS</title>
+<g id="a_node35"><a xlink:title="FStar.Tactics.Effect.fst:82">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="477" cy="-378" rx="28.6953" ry="18"/>
 <text text-anchor="middle" x="477" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">TacS</text>
+</a>
+</g>
 </g>
 <!-- TacS&#45;&gt;TacH -->
 <g id="edge34" class="edge">
@@ -570,8 +675,11 @@
 <!-- TacF -->
 <g id="node36" class="node">
 <title>TacF</title>
+<g id="a_node36"><a xlink:title="FStar.Tactics.Effect.fst:82">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="552" cy="-378" rx="28.6953" ry="18"/>
 <text text-anchor="middle" x="552" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">TacF</text>
+</a>
+</g>
 </g>
 <!-- TacF&#45;&gt;TacH -->
 <g id="edge35" class="edge">
@@ -582,8 +690,11 @@
 <!-- Pure -->
 <g id="node37" class="node">
 <title>Pure</title>
+<g id="a_node37"><a xlink:title="prims.fst:204">
 <ellipse fill="#bae3ff" stroke="#000000" stroke-dasharray="1,5" cx="1481" cy="-306" rx="27" ry="18"/>
 <text text-anchor="middle" x="1481" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">Pure</text>
+</a>
+</g>
 </g>
 <!-- Pure&#45;&gt;PURE -->
 <g id="edge36" class="edge">
@@ -594,8 +705,11 @@
 <!-- Admit -->
 <g id="node38" class="node">
 <title>Admit</title>
+<g id="a_node38"><a xlink:title="prims.fst:204">
 <ellipse fill="#bae3ff" stroke="#000000" stroke-dasharray="1,5" cx="1364" cy="-306" rx="33.5952" ry="18"/>
 <text text-anchor="middle" x="1364" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">Admit</text>
+</a>
+</g>
 </g>
 <!-- Admit&#45;&gt;PURE -->
 <g id="edge37" class="edge">
@@ -606,8 +720,11 @@
 <!-- Tot -->
 <g id="node39" class="node">
 <title>Tot</title>
+<g id="a_node39"><a xlink:title="prims.fst:204">
 <ellipse fill="#bae3ff" stroke="#000000" stroke-dasharray="1,5" cx="1553" cy="-306" rx="27" ry="18"/>
 <text text-anchor="middle" x="1553" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">Tot</text>
+</a>
+</g>
 </g>
 <!-- Tot&#45;&gt;PURE -->
 <g id="edge38" class="edge">
@@ -618,8 +735,11 @@
 <!-- GTot -->
 <g id="node40" class="node">
 <title>GTot</title>
+<g id="a_node40"><a xlink:title="prims.fst:229">
 <ellipse fill="#bae3ff" stroke="#000000" stroke-dasharray="1,5" cx="1207" cy="-306" rx="29.4969" ry="18"/>
 <text text-anchor="middle" x="1207" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">GTot</text>
+</a>
+</g>
 </g>
 <!-- GTot&#45;&gt;GHOST -->
 <g id="edge39" class="edge">
@@ -636,8 +756,11 @@
 <!-- Ghost -->
 <g id="node41" class="node">
 <title>Ghost</title>
+<g id="a_node41"><a xlink:title="prims.fst:229">
 <ellipse fill="#bae3ff" stroke="#000000" stroke-dasharray="1,5" cx="1128" cy="-306" rx="31.6951" ry="18"/>
 <text text-anchor="middle" x="1128" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">Ghost</text>
+</a>
+</g>
 </g>
 <!-- Ghost&#45;&gt;GHOST -->
 <g id="edge40" class="edge">
@@ -654,8 +777,11 @@
 <!-- Lemma -->
 <g id="node42" class="node">
 <title>Lemma</title>
+<g id="a_node42"><a xlink:title="prims.fst:204">
 <ellipse fill="#bae3ff" stroke="#000000" stroke-dasharray="1,5" cx="1475" cy="-378" rx="38.1938" ry="18"/>
 <text text-anchor="middle" x="1475" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">Lemma</text>
+</a>
+</g>
 </g>
 <!-- Lemma&#45;&gt;Pure -->
 <g id="edge41" class="edge">
@@ -666,8 +792,11 @@
 <!-- M -->
 <g id="node43" class="node">
 <title>M</title>
+<g id="a_node43"><a xlink:title="prims.fst:204">
 <ellipse fill="#bae3ff" stroke="#000000" stroke-dasharray="1,5" cx="1558" cy="-378" rx="27" ry="18"/>
 <text text-anchor="middle" x="1558" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">M</text>
+</a>
+</g>
 </g>
 <!-- M&#45;&gt;Tot -->
 <g id="edge42" class="edge">
