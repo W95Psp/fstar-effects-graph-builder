@@ -1,4 +1,6 @@
-![Fullscreen clickable SVG](https://htmlpreview.github.io/?https://github.com/W95Psp/fstar-effects-graph-builder/blob/master/effect-lattice.svg)
+[Fullscreen clickable SVG](https://htmlpreview.github.io/?https://github.com/W95Psp/fstar-effects-graph-builder/blob/master/effect-lattice.svg)
+
+![Alt text](./effect-lattice.svg)
 
 
 | Feature                           | Style                     |
