@@ -12,3 +12,5 @@
 | `sub_effect A = B`                | Yellow arrow              |
 
 Path of effects are accessible in tooltips. Clicking on nodes open the source code of the effect on github.
+
+Path's tooltips gives information about "sub_effect" location, clicking on them open source on github.

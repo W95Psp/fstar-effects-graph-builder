@@ -55,7 +55,7 @@ let find = re => {
 
 	let aliases = gmatch(/\n[ \s]*\beffect\s+(\S+)\s+[^=]*=\s+(?:\/\/.*\n)?\s*(\S+)/gm, src)
 	    .map(ff(([_, Alias, Original]) => ({Alias, Original, path})));
-	let subEffects = gmatch(subEffectsRe, src).map(([_, From, To]) => ({From, To}));
+	let subEffects = gmatch(subEffectsRe, src).map(ff(([_, From, To]) => ({From, To, path})));
 	return [aliases, subEffects, effectsDict];
     });
 
@@ -79,7 +79,10 @@ let find = re => {
 		    throw "Err "+v+" (in \""+o.From+" ~> "+o.To+"\") not found";
 	};
     	['From', 'To'].map(check);
-    	dict[o.From].liftableTo.push(o.To);
+	let str = {str: o.To};
+	str.path = o.path;
+	str.line = o.line;
+    	dict[o.From].liftableTo.push(str);
     };
 
     let eqModPoint = (a, b) => {
@@ -123,7 +126,14 @@ let find = re => {
     });
 
     subEffects.map(computeSubEffectDependencies);
-    Object.keys(dict).map(k => dict[k].liftableTo = [...new Set(dict[k].liftableTo)]);
+    Object.keys(dict).map(k => {
+	let cache = {};
+	for(let i in dict[k].liftableTo)
+	    cache[dict[k].liftableTo[i].str] = dict[k].liftableTo[i];
+	dict[k].liftableTo = Object.keys(cache).map(key => cache[key]);
+    });
+			 //   dict[k].liftableTo = [...new Set(dict[k].liftableTo)]
+			 // );
     
     return dict;
 };
@@ -173,7 +183,10 @@ let exportToGraphviz = (effects, style) => {
     Object.keys(effects).map(k => {
 	let E = effects[k];
 	if(!E.aliasOf)
-	    E.liftableTo.map(x => s += E.name + '->' +x+ ';\n');
+	    E.liftableTo.map(x => s += E.name + '->' +x.str+stylesToString(
+		{tooltip: x.path.substr(givenPath.length).replace(/^\//, '') + ':' + x.line},
+		{URL: mkURL(x.path.substr(givenPath.length), x.line)}
+	    )+ ';\n');
 	else
 	    s += E.name + '->' + E.aliasOf.name +stylesToString('aliasArrow')+';\n';
     });
