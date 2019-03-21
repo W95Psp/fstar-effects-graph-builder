@@ -8,5 +8,4 @@
 | Reflectable                       | Thick green border        |
 | `sub_effect A = B`                | Yellow arrow              |
 
-
-Path of effects are accessible in tooltips.
+Path of effects are accessible in tooltips. Clicking on nodes open the source code of the effect on github.

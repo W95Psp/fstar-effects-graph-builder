@@ -5,6 +5,7 @@ let rFindFiles = (path) =>
     fs.readdirSync(path).map(o => path+'/'+o)
     .map(o => fs.lstatSync(o).isDirectory() ? rFindFiles(o) : [o]).flat();
 
+let mkURL = (path, line) => `https://github.com/FStarLang/FStar/blob/master/ulib/${path}#L${line}`.replace(/^\.\//, '').replace(/\/\//g, '/').replace(/ulib\/ulib/g, 'ulib');
 let ithrow = x => {throw x;};
 
 let gmatch = (re_, str) => {
@@ -31,7 +32,7 @@ let find = re => {
 	let effectsDict = {};
 
 	let newLineMap = gmatch(/\n/gm, src).map(x => x.index);
-	let getNumberOfLine = tpos => newLineMap.findIndex(nlpos => tpos < nlpos);
+	let getNumberOfLine = tpos => newLineMap.findIndex(nlpos => tpos < nlpos) + 1;
 
 	let ff=f=>x=>{let r = f(x); r.line = getNumberOfLine(x.index); return r;};
 	let i=gmatch(inhRe, src).map(ff(([_, flags, name, inheritFrom]) =>
@@ -156,13 +157,15 @@ let exportToGraphviz = (effects, style) => {
     let s = 'digraph G {\n';
     Object.keys(effects).map(k => {
 	let E = effects[k];
+	let path = E.path.substr(givenPath.length);
 	s += E.name + stylesToString(
 	    E.aliasOf && 'aliasEffect',
 	    E.inheritFrom && 'inheritedEffect',
 	    E.tot && 'total',
 	    E.reifiable && 'reifiable',
 	    E.reflectable && 'reflectable',
-	    {tooltip: E.path.substr(givenPath.length).replace(/^\//, '') + ':' + E.line}
+	    {tooltip: path.replace(/^\//, '') + ':' + E.line},
+	    {URL: mkURL(path, E.line)}
 	) + ';\n';
     });
     
