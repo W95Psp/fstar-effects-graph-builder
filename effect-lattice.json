@@ -1,0 +1,955 @@
+{
+    "ALL": {
+        "flags": "",
+        "name": "ALL",
+        "inheritFrom": "ALL_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.HyperStack.All.fst"
+    },
+    "GST": {
+        "flags": "",
+        "name": "GST",
+        "inheritFrom": "STATE_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "STATE"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.ST.fst"
+    },
+    "STATE": {
+        "flags": "",
+        "name": "STATE",
+        "inheritFrom": "STATE_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "ALL"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst"
+    },
+    "DIV": {
+        "flags": "",
+        "name": "DIV",
+        "inheritFrom": "PURE",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "GST",
+            "STATE",
+            "EXN",
+            "READER",
+            "STATE2",
+            "TAC"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Pervasives.fst"
+    },
+    "STATE_h": {
+        "flags": "",
+        "name": "STATE_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Pervasives.fst"
+    },
+    "EXN": {
+        "flags": "",
+        "name": "EXN",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "ALL"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Pervasives.fst"
+    },
+    "ALL_h": {
+        "flags": "",
+        "name": "ALL_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Pervasives.fst"
+    },
+    "READER": {
+        "flags": "",
+        "name": "READER",
+        "inheritFrom": "READER_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "STATE"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Reader.fst"
+    },
+    "READER_h": {
+        "flags": "",
+        "name": "READER_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Reader.fst"
+    },
+    "STATE2": {
+        "flags": "",
+        "name": "STATE2",
+        "inheritFrom": "STATE_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Relational.Comp.fst"
+    },
+    "TAC": {
+        "flags": "",
+        "name": "TAC",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Tactics.Effect.fst"
+    },
+    "GHOST": {
+        "flags": "\n\ntotal\n",
+        "name": "GHOST",
+        "inheritFrom": "PURE",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": true,
+        "liftableTo": [],
+        "path": "/home/lucas/.local/fstar/ulib/prims.fst"
+    },
+    "PURE": {
+        "flags": "\n\ntotal\n",
+        "name": "PURE",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": true,
+        "liftableTo": [
+            "DIV",
+            "GHOST"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/prims.fst"
+    },
+    "All": {
+        "flags": "",
+        "name": "All",
+        "inheritFrom": "ALL_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.HyperStack.All.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "ALL",
+            "inheritFrom": "ALL_h",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [],
+            "path": "/home/lucas/.local/fstar/ulib/FStar.HyperStack.All.fst"
+        }
+    },
+    "ML": {
+        "flags": "",
+        "name": "ML",
+        "inheritFrom": "ALL_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.HyperStack.All.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "ALL",
+            "inheritFrom": "ALL_h",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [],
+            "path": "/home/lucas/.local/fstar/ulib/FStar.HyperStack.All.fst"
+        }
+    },
+    "Unsafe": {
+        "flags": "",
+        "name": "Unsafe",
+        "inheritFrom": "STATE_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "ALL"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "STATE",
+            "inheritFrom": "STATE_h",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [
+                "ALL"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst"
+        }
+    },
+    "Stack": {
+        "flags": "",
+        "name": "Stack",
+        "inheritFrom": "STATE_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "ALL"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "STATE",
+            "inheritFrom": "STATE_h",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [
+                "ALL"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst"
+        }
+    },
+    "Heap": {
+        "flags": "",
+        "name": "Heap",
+        "inheritFrom": "STATE_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "ALL"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "STATE",
+            "inheritFrom": "STATE_h",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [
+                "ALL"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst"
+        }
+    },
+    "ST": {
+        "flags": "",
+        "name": "ST",
+        "inheritFrom": "STATE_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "ALL"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "STATE",
+            "inheritFrom": "STATE_h",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [
+                "ALL"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst"
+        }
+    },
+    "St": {
+        "flags": "",
+        "name": "St",
+        "inheritFrom": "STATE_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "ALL"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "ST",
+            "inheritFrom": "STATE_h",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [
+                "ALL"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst",
+            "aliasOf": {
+                "flags": "",
+                "name": "STATE",
+                "inheritFrom": "STATE_h",
+                "reflectable": false,
+                "reifiable": false,
+                "tot": false,
+                "liftableTo": [
+                    "ALL"
+                ],
+                "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst"
+            }
+        }
+    },
+    "StackInline": {
+        "flags": "",
+        "name": "StackInline",
+        "inheritFrom": "STATE_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "ALL"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "STATE",
+            "inheritFrom": "STATE_h",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [
+                "ALL"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst"
+        }
+    },
+    "Inline": {
+        "flags": "",
+        "name": "Inline",
+        "inheritFrom": "STATE_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "ALL"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "STATE",
+            "inheritFrom": "STATE_h",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [
+                "ALL"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst"
+        }
+    },
+    "STL": {
+        "flags": "",
+        "name": "STL",
+        "inheritFrom": "STATE_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "ALL"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "Stack",
+            "inheritFrom": "STATE_h",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [
+                "ALL"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst",
+            "aliasOf": {
+                "flags": "",
+                "name": "STATE",
+                "inheritFrom": "STATE_h",
+                "reflectable": false,
+                "reifiable": false,
+                "tot": false,
+                "liftableTo": [
+                    "ALL"
+                ],
+                "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst"
+            }
+        }
+    },
+    "Div": {
+        "flags": "",
+        "name": "Div",
+        "inheritFrom": "PURE",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "GST",
+            "STATE",
+            "EXN",
+            "READER",
+            "STATE2",
+            "TAC"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Pervasives.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "DIV",
+            "inheritFrom": "PURE",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [
+                "GST",
+                "STATE",
+                "EXN",
+                "READER",
+                "STATE2",
+                "TAC"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/FStar.Pervasives.fst"
+        }
+    },
+    "Dv": {
+        "flags": "",
+        "name": "Dv",
+        "inheritFrom": "PURE",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "GST",
+            "STATE",
+            "EXN",
+            "READER",
+            "STATE2",
+            "TAC"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Pervasives.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "DIV",
+            "inheritFrom": "PURE",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [
+                "GST",
+                "STATE",
+                "EXN",
+                "READER",
+                "STATE2",
+                "TAC"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/FStar.Pervasives.fst"
+        }
+    },
+    "EXT": {
+        "flags": "",
+        "name": "EXT",
+        "inheritFrom": "PURE",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "GST",
+            "STATE",
+            "EXN",
+            "READER",
+            "STATE2",
+            "TAC"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Pervasives.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "Dv",
+            "inheritFrom": "PURE",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [
+                "GST",
+                "STATE",
+                "EXN",
+                "READER",
+                "STATE2",
+                "TAC"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/FStar.Pervasives.fst",
+            "aliasOf": {
+                "flags": "",
+                "name": "DIV",
+                "inheritFrom": "PURE",
+                "reflectable": false,
+                "reifiable": false,
+                "tot": false,
+                "liftableTo": [
+                    "GST",
+                    "STATE",
+                    "EXN",
+                    "READER",
+                    "STATE2",
+                    "TAC"
+                ],
+                "path": "/home/lucas/.local/fstar/ulib/FStar.Pervasives.fst"
+            }
+        }
+    },
+    "Exn": {
+        "flags": "",
+        "name": "Exn",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "ALL"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Pervasives.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "EXN",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [
+                "ALL"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/FStar.Pervasives.fst"
+        }
+    },
+    "Ex": {
+        "flags": "",
+        "name": "Ex",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "ALL"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Pervasives.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "Exn",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [
+                "ALL"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/FStar.Pervasives.fst",
+            "aliasOf": {
+                "flags": "",
+                "name": "EXN",
+                "reflectable": false,
+                "reifiable": false,
+                "tot": false,
+                "liftableTo": [
+                    "ALL"
+                ],
+                "path": "/home/lucas/.local/fstar/ulib/FStar.Pervasives.fst"
+            }
+        }
+    },
+    "STRead": {
+        "flags": "",
+        "name": "STRead",
+        "inheritFrom": "READER_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "STATE"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Reader.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "READER",
+            "inheritFrom": "READER_h",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [
+                "STATE"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/FStar.Reader.fst"
+        }
+    },
+    "ST2": {
+        "flags": "",
+        "name": "ST2",
+        "inheritFrom": "STATE_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Relational.Comp.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "STATE2",
+            "inheritFrom": "STATE_h",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [],
+            "path": "/home/lucas/.local/fstar/ulib/FStar.Relational.Comp.fst"
+        }
+    },
+    "St2": {
+        "flags": "",
+        "name": "St2",
+        "inheritFrom": "STATE_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Relational.Comp.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "ST2",
+            "inheritFrom": "STATE_h",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [],
+            "path": "/home/lucas/.local/fstar/ulib/FStar.Relational.Comp.fst",
+            "aliasOf": {
+                "flags": "",
+                "name": "STATE2",
+                "inheritFrom": "STATE_h",
+                "reflectable": false,
+                "reifiable": false,
+                "tot": false,
+                "liftableTo": [],
+                "path": "/home/lucas/.local/fstar/ulib/FStar.Relational.Comp.fst"
+            }
+        }
+    },
+    "State": {
+        "flags": "",
+        "name": "State",
+        "inheritFrom": "STATE_h",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [
+            "ALL"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "STATE",
+            "inheritFrom": "STATE_h",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [
+                "ALL"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/reclaimable/FStar.ST.fst"
+        }
+    },
+    "TacH": {
+        "flags": "",
+        "name": "TacH",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Tactics.Effect.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "TAC",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [],
+            "path": "/home/lucas/.local/fstar/ulib/FStar.Tactics.Effect.fst"
+        }
+    },
+    "Tac": {
+        "flags": "",
+        "name": "Tac",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Tactics.Effect.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "TacH",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [],
+            "path": "/home/lucas/.local/fstar/ulib/FStar.Tactics.Effect.fst",
+            "aliasOf": {
+                "flags": "",
+                "name": "TAC",
+                "reflectable": false,
+                "reifiable": false,
+                "tot": false,
+                "liftableTo": [],
+                "path": "/home/lucas/.local/fstar/ulib/FStar.Tactics.Effect.fst"
+            }
+        }
+    },
+    "TacS": {
+        "flags": "",
+        "name": "TacS",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Tactics.Effect.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "TacH",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [],
+            "path": "/home/lucas/.local/fstar/ulib/FStar.Tactics.Effect.fst",
+            "aliasOf": {
+                "flags": "",
+                "name": "TAC",
+                "reflectable": false,
+                "reifiable": false,
+                "tot": false,
+                "liftableTo": [],
+                "path": "/home/lucas/.local/fstar/ulib/FStar.Tactics.Effect.fst"
+            }
+        }
+    },
+    "TacF": {
+        "flags": "",
+        "name": "TacF",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": false,
+        "liftableTo": [],
+        "path": "/home/lucas/.local/fstar/ulib/FStar.Tactics.Effect.fst",
+        "aliasOf": {
+            "flags": "",
+            "name": "TacH",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": false,
+            "liftableTo": [],
+            "path": "/home/lucas/.local/fstar/ulib/FStar.Tactics.Effect.fst",
+            "aliasOf": {
+                "flags": "",
+                "name": "TAC",
+                "reflectable": false,
+                "reifiable": false,
+                "tot": false,
+                "liftableTo": [],
+                "path": "/home/lucas/.local/fstar/ulib/FStar.Tactics.Effect.fst"
+            }
+        }
+    },
+    "Pure": {
+        "flags": "\n\ntotal\n",
+        "name": "Pure",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": true,
+        "liftableTo": [
+            "DIV",
+            "GHOST"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/prims.fst",
+        "aliasOf": {
+            "flags": "\n\ntotal\n",
+            "name": "PURE",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": true,
+            "liftableTo": [
+                "DIV",
+                "GHOST"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/prims.fst"
+        }
+    },
+    "Admit": {
+        "flags": "\n\ntotal\n",
+        "name": "Admit",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": true,
+        "liftableTo": [
+            "DIV",
+            "GHOST"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/prims.fst",
+        "aliasOf": {
+            "flags": "\n\ntotal\n",
+            "name": "PURE",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": true,
+            "liftableTo": [
+                "DIV",
+                "GHOST"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/prims.fst"
+        }
+    },
+    "Tot": {
+        "flags": "\n\ntotal\n",
+        "name": "Tot",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": true,
+        "liftableTo": [
+            "DIV",
+            "GHOST"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/prims.fst",
+        "aliasOf": {
+            "flags": "\n\ntotal\n",
+            "name": "PURE",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": true,
+            "liftableTo": [
+                "DIV",
+                "GHOST"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/prims.fst"
+        }
+    },
+    "GTot": {
+        "flags": "\n\ntotal\n",
+        "name": "GTot",
+        "inheritFrom": "PURE",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": true,
+        "liftableTo": [],
+        "path": "/home/lucas/.local/fstar/ulib/prims.fst",
+        "aliasOf": {
+            "flags": "\n\ntotal\n",
+            "name": "GHOST",
+            "inheritFrom": "PURE",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": true,
+            "liftableTo": [],
+            "path": "/home/lucas/.local/fstar/ulib/prims.fst"
+        }
+    },
+    "Ghost": {
+        "flags": "\n\ntotal\n",
+        "name": "Ghost",
+        "inheritFrom": "PURE",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": true,
+        "liftableTo": [],
+        "path": "/home/lucas/.local/fstar/ulib/prims.fst",
+        "aliasOf": {
+            "flags": "\n\ntotal\n",
+            "name": "GHOST",
+            "inheritFrom": "PURE",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": true,
+            "liftableTo": [],
+            "path": "/home/lucas/.local/fstar/ulib/prims.fst"
+        }
+    },
+    "Lemma": {
+        "flags": "\n\ntotal\n",
+        "name": "Lemma",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": true,
+        "liftableTo": [
+            "DIV",
+            "GHOST"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/prims.fst",
+        "aliasOf": {
+            "flags": "\n\ntotal\n",
+            "name": "Pure",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": true,
+            "liftableTo": [
+                "DIV",
+                "GHOST"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/prims.fst",
+            "aliasOf": {
+                "flags": "\n\ntotal\n",
+                "name": "PURE",
+                "reflectable": false,
+                "reifiable": false,
+                "tot": true,
+                "liftableTo": [
+                    "DIV",
+                    "GHOST"
+                ],
+                "path": "/home/lucas/.local/fstar/ulib/prims.fst"
+            }
+        }
+    },
+    "M": {
+        "flags": "\n\ntotal\n",
+        "name": "M",
+        "reflectable": false,
+        "reifiable": false,
+        "tot": true,
+        "liftableTo": [
+            "DIV",
+            "GHOST"
+        ],
+        "path": "/home/lucas/.local/fstar/ulib/prims.fst",
+        "aliasOf": {
+            "flags": "\n\ntotal\n",
+            "name": "Tot",
+            "reflectable": false,
+            "reifiable": false,
+            "tot": true,
+            "liftableTo": [
+                "DIV",
+                "GHOST"
+            ],
+            "path": "/home/lucas/.local/fstar/ulib/prims.fst",
+            "aliasOf": {
+                "flags": "\n\ntotal\n",
+                "name": "PURE",
+                "reflectable": false,
+                "reifiable": false,
+                "tot": true,
+                "liftableTo": [
+                    "DIV",
+                    "GHOST"
+                ],
+                "path": "/home/lucas/.local/fstar/ulib/prims.fst"
+            }
+        }
+    }
+}

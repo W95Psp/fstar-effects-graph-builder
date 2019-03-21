@@ -119,7 +119,7 @@ let find = re => {
     return dict;
 };
 
-let effects = find(/^[^#]*\.fst$/);
+let effects = find(/^[^#]*\.fsti?$/);
 
 let exportToGraphviz = (effects, style) => {
     let stylesToString = (...l) => {
@@ -151,18 +151,27 @@ let exportToGraphviz = (effects, style) => {
 	    E.reflectable && 'reflectable'
 	) + ';\n';
     });
+    
     Object.keys(effects).map(k => {
 	let E = effects[k];
-	if(E.inheritedFrom)
-	    s += E.name + '->' + E.inheritedFrom +stylesToString('inheritArrow')+';\n';
 	if(!E.aliasOf)
 	    E.liftableTo.map(x => s += E.name + '->' +x+ ';\n');
 	else
 	    s += E.name + '->' + E.aliasOf.name +stylesToString('aliasArrow')+';\n';
     });
+    
+    Object.keys(effects).map(k => {
+	let E = effects[k];
+	if(E.inheritFrom){
+	    s += E.name + '->' + E.inheritFrom +stylesToString('inheritArrow')+';\n';
+	}
+    });
     s += '\n}\n';
     return s;
 };
+
+
+fs.writeFileSync('effect-lattice.json', JSON.stringify(effects, null, 4));
 
 let gz = exportToGraphviz(effects, {
     total: {style: 'filled', fillcolor: '#bae3ff'},
