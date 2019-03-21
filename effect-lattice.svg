@@ -243,7 +243,7 @@
 <!-- All -->
 <g id="node14" class="node">
 <title>All</title>
-<g id="a_node14"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.All.fst#L23" xlink:title="FStar.All.fst:23">
+<g id="a_node14"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.All.fst#L33" xlink:title="FStar.All.fst:33">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="137" cy="-162" rx="27" ry="18"/>
 <text text-anchor="middle" x="137" y="-158.3" font-family="Times,serif" font-size="14.00" fill="#000000">All</text>
 </a>
@@ -264,7 +264,7 @@
 <!-- ML -->
 <g id="node15" class="node">
 <title>ML</title>
-<g id="a_node15"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.All.fst#L23" xlink:title="FStar.All.fst:23">
+<g id="a_node15"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.All.fst#L37" xlink:title="FStar.All.fst:37">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="27" cy="-162" rx="27" ry="18"/>
 <text text-anchor="middle" x="27" y="-158.3" font-family="Times,serif" font-size="14.00" fill="#000000">ML</text>
 </a>
@@ -285,7 +285,7 @@
 <!-- Unsafe -->
 <g id="node16" class="node">
 <title>Unsafe</title>
-<g id="a_node16"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.HyperStack.ST.fsti#L29" xlink:title="FStar.HyperStack.ST.fsti:29">
+<g id="a_node16"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.HyperStack.ST.fsti#L97" xlink:title="FStar.HyperStack.ST.fsti:97">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="1094" cy="-234" rx="35.9954" ry="18"/>
 <text text-anchor="middle" x="1094" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">Unsafe</text>
 </a>
@@ -306,7 +306,7 @@
 <!-- Stack -->
 <g id="node17" class="node">
 <title>Stack</title>
-<g id="a_node17"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.HyperStack.ST.fsti#L29" xlink:title="FStar.HyperStack.ST.fsti:29">
+<g id="a_node17"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.HyperStack.ST.fsti#L202" xlink:title="FStar.HyperStack.ST.fsti:202">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="251" cy="-234" rx="30.5947" ry="18"/>
 <text text-anchor="middle" x="251" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">Stack</text>
 </a>
@@ -327,7 +327,7 @@
 <!-- Heap -->
 <g id="node18" class="node">
 <title>Heap</title>
-<g id="a_node18"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.HyperStack.ST.fsti#L29" xlink:title="FStar.HyperStack.ST.fsti:29">
+<g id="a_node18"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.HyperStack.ST.fsti#L213" xlink:title="FStar.HyperStack.ST.fsti:213">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="553" cy="-234" rx="29.4969" ry="18"/>
 <text text-anchor="middle" x="553" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">Heap</text>
 </a>
@@ -348,7 +348,7 @@
 <!-- ST -->
 <g id="node19" class="node">
 <title>ST</title>
-<g id="a_node19"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.HyperStack.ST.fsti#L29" xlink:title="FStar.HyperStack.ST.fsti:29">
+<g id="a_node19"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.HyperStack.ST.fsti#L226" xlink:title="FStar.HyperStack.ST.fsti:226">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="665" cy="-234" rx="27" ry="18"/>
 <text text-anchor="middle" x="665" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">ST</text>
 </a>
@@ -369,7 +369,7 @@
 <!-- St -->
 <g id="node20" class="node">
 <title>St</title>
-<g id="a_node20"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.HyperStack.ST.fsti#L29" xlink:title="FStar.HyperStack.ST.fsti:29">
+<g id="a_node20"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.HyperStack.ST.fsti#L229" xlink:title="FStar.HyperStack.ST.fsti:229">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="1051" cy="-306" rx="27" ry="18"/>
 <text text-anchor="middle" x="1051" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">St</text>
 </a>
@@ -390,7 +390,7 @@
 <!-- StackInline -->
 <g id="node21" class="node">
 <title>StackInline</title>
-<g id="a_node21"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.HyperStack.ST.fsti#L29" xlink:title="FStar.HyperStack.ST.fsti:29">
+<g id="a_node21"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.HyperStack.ST.fsti#L246" xlink:title="FStar.HyperStack.ST.fsti:246">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="761" cy="-234" rx="50.8918" ry="18"/>
 <text text-anchor="middle" x="761" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">StackInline</text>
 </a>
@@ -411,7 +411,7 @@
 <!-- Inline -->
 <g id="node22" class="node">
 <title>Inline</title>
-<g id="a_node22"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.HyperStack.ST.fsti#L29" xlink:title="FStar.HyperStack.ST.fsti:29">
+<g id="a_node22"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.HyperStack.ST.fsti#L264" xlink:title="FStar.HyperStack.ST.fsti:264">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="861" cy="-234" rx="31.3957" ry="18"/>
 <text text-anchor="middle" x="861" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">Inline</text>
 </a>
@@ -432,7 +432,7 @@
 <!-- STL -->
 <g id="node23" class="node">
 <title>STL</title>
-<g id="a_node23"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.HyperStack.ST.fsti#L29" xlink:title="FStar.HyperStack.ST.fsti:29">
+<g id="a_node23"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.HyperStack.ST.fsti#L272" xlink:title="FStar.HyperStack.ST.fsti:272">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="230" cy="-306" rx="27" ry="18"/>
 <text text-anchor="middle" x="230" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">STL</text>
 </a>
@@ -453,7 +453,7 @@
 <!-- Div -->
 <g id="node24" class="node">
 <title>Div</title>
-<g id="a_node24"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Pervasives.fst#L36" xlink:title="FStar.Pervasives.fst:36">
+<g id="a_node24"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Pervasives.fst#L38" xlink:title="FStar.Pervasives.fst:38">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="1077" cy="-378" rx="27" ry="18"/>
 <text text-anchor="middle" x="1077" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">Div</text>
 </a>
@@ -474,7 +474,7 @@
 <!-- Dv -->
 <g id="node25" class="node">
 <title>Dv</title>
-<g id="a_node25"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Pervasives.fst#L36" xlink:title="FStar.Pervasives.fst:36">
+<g id="a_node25"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Pervasives.fst#L41" xlink:title="FStar.Pervasives.fst:41">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="1247" cy="-378" rx="27" ry="18"/>
 <text text-anchor="middle" x="1247" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">Dv</text>
 </a>
@@ -495,7 +495,7 @@
 <!-- EXT -->
 <g id="node26" class="node">
 <title>EXT</title>
-<g id="a_node26"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Pervasives.fst#L36" xlink:title="FStar.Pervasives.fst:36">
+<g id="a_node26"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Pervasives.fst#L47" xlink:title="FStar.Pervasives.fst:47">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="1274" cy="-450" rx="27.8951" ry="18"/>
 <text text-anchor="middle" x="1274" y="-446.3" font-family="Times,serif" font-size="14.00" fill="#000000">EXT</text>
 </a>
@@ -516,7 +516,7 @@
 <!-- Exn -->
 <g id="node27" class="node">
 <title>Exn</title>
-<g id="a_node27"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Pervasives.fst#L154" xlink:title="FStar.Pervasives.fst:154">
+<g id="a_node27"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Pervasives.fst#L168" xlink:title="FStar.Pervasives.fst:168">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="109" cy="-306" rx="27" ry="18"/>
 <text text-anchor="middle" x="109" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">Exn</text>
 </a>
@@ -531,7 +531,7 @@
 <!-- Ex -->
 <g id="node28" class="node">
 <title>Ex</title>
-<g id="a_node28"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Pervasives.fst#L154" xlink:title="FStar.Pervasives.fst:154">
+<g id="a_node28"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Pervasives.fst#L173" xlink:title="FStar.Pervasives.fst:173">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="109" cy="-378" rx="27" ry="18"/>
 <text text-anchor="middle" x="109" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">Ex</text>
 </a>
@@ -546,7 +546,7 @@
 <!-- STRead -->
 <g id="node29" class="node">
 <title>STRead</title>
-<g id="a_node29"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Reader.fst#L82" xlink:title="FStar.Reader.fst:82">
+<g id="a_node29"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Reader.fst#L83" xlink:title="FStar.Reader.fst:83">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="331" cy="-306" rx="38.9931" ry="18"/>
 <text text-anchor="middle" x="331" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">STRead</text>
 </a>
@@ -567,7 +567,7 @@
 <!-- ST2 -->
 <g id="node30" class="node">
 <title>ST2</title>
-<g id="a_node30"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Relational.Comp.fst#L24" xlink:title="FStar.Relational.Comp.fst:24">
+<g id="a_node30"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Relational.Comp.fst#L29" xlink:title="FStar.Relational.Comp.fst:29">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="1411" cy="-234" rx="27" ry="18"/>
 <text text-anchor="middle" x="1411" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">ST2</text>
 </a>
@@ -588,7 +588,7 @@
 <!-- St2 -->
 <g id="node31" class="node">
 <title>St2</title>
-<g id="a_node31"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Relational.Comp.fst#L24" xlink:title="FStar.Relational.Comp.fst:24">
+<g id="a_node31"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Relational.Comp.fst#L32" xlink:title="FStar.Relational.Comp.fst:32">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="1625" cy="-306" rx="27" ry="18"/>
 <text text-anchor="middle" x="1625" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">St2</text>
 </a>
@@ -609,7 +609,7 @@
 <!-- State -->
 <g id="node32" class="node">
 <title>State</title>
-<g id="a_node32"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.ST.fst#L29" xlink:title="FStar.ST.fst:29">
+<g id="a_node32"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.ST.fst#L69" xlink:title="FStar.ST.fst:69">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="939" cy="-234" rx="28.6953" ry="18"/>
 <text text-anchor="middle" x="939" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">State</text>
 </a>
@@ -630,7 +630,7 @@
 <!-- TacH -->
 <g id="node33" class="node">
 <title>TacH</title>
-<g id="a_node33"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Tactics.Effect.fst#L83" xlink:title="FStar.Tactics.Effect.fst:83">
+<g id="a_node33"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Tactics.Effect.fst#L93" xlink:title="FStar.Tactics.Effect.fst:93">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="477" cy="-306" rx="30.5947" ry="18"/>
 <text text-anchor="middle" x="477" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">TacH</text>
 </a>
@@ -645,7 +645,7 @@
 <!-- Tac -->
 <g id="node34" class="node">
 <title>Tac</title>
-<g id="a_node34"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Tactics.Effect.fst#L83" xlink:title="FStar.Tactics.Effect.fst:83">
+<g id="a_node34"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Tactics.Effect.fst#L97" xlink:title="FStar.Tactics.Effect.fst:97">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="403" cy="-378" rx="27" ry="18"/>
 <text text-anchor="middle" x="403" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">Tac</text>
 </a>
@@ -660,7 +660,7 @@
 <!-- TacS -->
 <g id="node35" class="node">
 <title>TacS</title>
-<g id="a_node35"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Tactics.Effect.fst#L83" xlink:title="FStar.Tactics.Effect.fst:83">
+<g id="a_node35"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Tactics.Effect.fst#L100" xlink:title="FStar.Tactics.Effect.fst:100">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="477" cy="-378" rx="28.6953" ry="18"/>
 <text text-anchor="middle" x="477" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">TacS</text>
 </a>
@@ -675,7 +675,7 @@
 <!-- TacF -->
 <g id="node36" class="node">
 <title>TacF</title>
-<g id="a_node36"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Tactics.Effect.fst#L83" xlink:title="FStar.Tactics.Effect.fst:83">
+<g id="a_node36"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/FStar.Tactics.Effect.fst#L103" xlink:title="FStar.Tactics.Effect.fst:103">
 <ellipse fill="none" stroke="#000000" stroke-dasharray="1,5" cx="552" cy="-378" rx="28.6953" ry="18"/>
 <text text-anchor="middle" x="552" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">TacF</text>
 </a>
@@ -690,7 +690,7 @@
 <!-- Pure -->
 <g id="node37" class="node">
 <title>Pure</title>
-<g id="a_node37"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/prims.fst#L218" xlink:title="prims.fst:218">
+<g id="a_node37"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/prims.fst#L236" xlink:title="prims.fst:236">
 <ellipse fill="#bae3ff" stroke="#000000" stroke-dasharray="1,5" cx="1481" cy="-306" rx="27" ry="18"/>
 <text text-anchor="middle" x="1481" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">Pure</text>
 </a>
@@ -705,7 +705,7 @@
 <!-- Admit -->
 <g id="node38" class="node">
 <title>Admit</title>
-<g id="a_node38"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/prims.fst#L218" xlink:title="prims.fst:218">
+<g id="a_node38"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/prims.fst#L238" xlink:title="prims.fst:238">
 <ellipse fill="#bae3ff" stroke="#000000" stroke-dasharray="1,5" cx="1364" cy="-306" rx="33.5952" ry="18"/>
 <text text-anchor="middle" x="1364" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">Admit</text>
 </a>
@@ -720,7 +720,7 @@
 <!-- Tot -->
 <g id="node39" class="node">
 <title>Tot</title>
-<g id="a_node39"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/prims.fst#L218" xlink:title="prims.fst:218">
+<g id="a_node39"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/prims.fst#L242" xlink:title="prims.fst:242">
 <ellipse fill="#bae3ff" stroke="#000000" stroke-dasharray="1,5" cx="1553" cy="-306" rx="27" ry="18"/>
 <text text-anchor="middle" x="1553" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">Tot</text>
 </a>
@@ -735,7 +735,7 @@
 <!-- GTot -->
 <g id="node40" class="node">
 <title>GTot</title>
-<g id="a_node40"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/prims.fst#L243" xlink:title="prims.fst:243">
+<g id="a_node40"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/prims.fst#L254" xlink:title="prims.fst:254">
 <ellipse fill="#bae3ff" stroke="#000000" stroke-dasharray="1,5" cx="1207" cy="-306" rx="29.4969" ry="18"/>
 <text text-anchor="middle" x="1207" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">GTot</text>
 </a>
@@ -756,7 +756,7 @@
 <!-- Ghost -->
 <g id="node41" class="node">
 <title>Ghost</title>
-<g id="a_node41"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/prims.fst#L243" xlink:title="prims.fst:243">
+<g id="a_node41"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/prims.fst#L255" xlink:title="prims.fst:255">
 <ellipse fill="#bae3ff" stroke="#000000" stroke-dasharray="1,5" cx="1128" cy="-306" rx="31.6951" ry="18"/>
 <text text-anchor="middle" x="1128" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">Ghost</text>
 </a>
@@ -777,7 +777,7 @@
 <!-- Lemma -->
 <g id="node42" class="node">
 <title>Lemma</title>
-<g id="a_node42"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/prims.fst#L218" xlink:title="prims.fst:218">
+<g id="a_node42"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/prims.fst#L392" xlink:title="prims.fst:392">
 <ellipse fill="#bae3ff" stroke="#000000" stroke-dasharray="1,5" cx="1475" cy="-378" rx="38.1938" ry="18"/>
 <text text-anchor="middle" x="1475" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">Lemma</text>
 </a>
@@ -792,7 +792,7 @@
 <!-- M -->
 <g id="node43" class="node">
 <title>M</title>
-<g id="a_node43"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/prims.fst#L218" xlink:title="prims.fst:218">
+<g id="a_node43"><a xlink:href="http://github.com/FStarLang/FStar/blob/master/ulib/prims.fst#L398" xlink:title="prims.fst:398">
 <ellipse fill="#bae3ff" stroke="#000000" stroke-dasharray="1,5" cx="1558" cy="-378" rx="27" ry="18"/>
 <text text-anchor="middle" x="1558" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">M</text>
 </a>

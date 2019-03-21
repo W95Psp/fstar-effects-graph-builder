@@ -54,7 +54,7 @@ let find = re => {
 	});
 
 	let aliases = gmatch(/\n[ \s]*\beffect\s+(\S+)\s+[^=]*=\s+(?:\/\/.*\n)?\s*(\S+)/gm, src)
-	    .map(([_, Alias, Original]) => ({Alias, Original, path}));
+	    .map(ff(([_, Alias, Original]) => ({Alias, Original, path})));
 	let subEffects = gmatch(subEffectsRe, src).map(([_, From, To]) => ({From, To}));
 	return [aliases, subEffects, effectsDict];
     });
@@ -106,7 +106,7 @@ let find = re => {
 	throw a.Original + " not found (while computing aliases dependencies) // in path=" + a.path;
     };
     aliases = aliases.sort((a, b) => isDependentOf(a, b) ? 1 : isDependentOf(b, a) ? -1 : 0);
-    aliases.forEach(({Alias, Original, path}) => {
+    aliases.forEach(({Alias, Original, path, line}) => {
 	if(dict[Alias]){
 	    console.log("WARNING: Alias duplicate " + dict[Alias].name);
 	    return;
@@ -115,6 +115,7 @@ let find = re => {
 	if(!dict[Original])
 	    throw ""+Original+" not found (while linking aliases) // in path="+path;
 	let aliasObj = Object.assign({}, dict[Original]);
+	aliasObj.line = line;
 	aliasObj.path = path;
 	aliasObj.name = Alias;
 	aliasObj.aliasOf = dict[Original];
