@@ -25,7 +25,8 @@ let gmatch = (re_, str) => {
 
 let givenPath = process.argv[2];
 if(!givenPath)
-    throw "call this script this way: node scriptname.js /path/to/dir/";
+    throw "call this script this way: `node scriptname.js /path/to/dir/`\n(or `node scriptname.js /path/to/dir/ turn-yellow-on`)";
+let turnYellowOn = process.argv[3] === 'turn-yellow-on';
 
 let inhRe = /((?:\s*(?:total|reifiable|reflectable)\s*)*)new_effect\s*(\S+)\s*=\s*(\S+)\s*/mg;
 let expRe = /((?:\s*(?:total|reifiable|reflectable)\s*)*)new_effect\s*{(?:.*\n)?\s*(\S+)(.*)/mg;
@@ -198,12 +199,13 @@ let exportToGraphviz = (effects, style) => {
 	else
 	    s += mkArr(E.name, E.aliasOf.name, stylesToString('aliasArrow'));
     });
-    
-    Object.keys(effects).map(k => {
-	let E = effects[k];
-	if(E.inheritFrom)
-	    s += mkArr(E.name, E.inheritFrom, stylesToString('inheritArrow'));
-    });
+
+    if(turnYellowOn)
+	Object.keys(effects).map(k => {
+	    let E = effects[k];
+	    if(E.inheritFrom)
+		s += mkArr(E.name, E.inheritFrom, stylesToString('inheritArrow'));
+	});
     s += '\n}\n';
     return s;
 };
