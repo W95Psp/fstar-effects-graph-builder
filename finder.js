@@ -1,9 +1,15 @@
 const path = require('path');
 const fs = require('fs');
 
+function flatten(arr) {
+  return arr.reduce(function (flat, toFlatten) {
+    return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten);
+  }, []);
+}
+
 let rFindFiles = (path) =>
-    fs.readdirSync(path).map(o => path+'/'+o)
-    .map(o => fs.lstatSync(o).isDirectory() ? rFindFiles(o) : [o]).flat();
+    flatten(fs.readdirSync(path).map(o => path+'/'+o)
+	    .map(o => fs.lstatSync(o).isDirectory() ? rFindFiles(o) : [o]));
 
 let mkURL = (path, line) => 'http://'+`github.com/FStarLang/FStar/blob/master/ulib/${path}#L${line}`.replace(/^\.\//, '').replace(/\/\//g, '/').replace(/ulib\/ulib/g, 'ulib');
 let ithrow = x => {throw x;};
@@ -179,23 +185,24 @@ let exportToGraphviz = (effects, style) => {
 	    {URL: mkURL(path, E.line)}
 	) + ';\n';
     });
+
+    let mkArr = (a, b, style) => b + '->' + a + style +';\n';
     
     Object.keys(effects).map(k => {
 	let E = effects[k];
 	if(!E.aliasOf)
-	    E.liftableTo.map(x => s += E.name + '->' +x.str+stylesToString(
+	    E.liftableTo.map(x => s += mkArr(E.name,x.str,stylesToString(
 		{tooltip: x.path.substr(givenPath.length).replace(/^\//, '') + ':' + x.line},
 		{URL: mkURL(x.path.substr(givenPath.length), x.line)}
-	    )+ ';\n');
+	    )));
 	else
-	    s += E.name + '->' + E.aliasOf.name +stylesToString('aliasArrow')+';\n';
+	    s += mkArr(E.name, E.aliasOf.name, stylesToString('aliasArrow'));
     });
     
     Object.keys(effects).map(k => {
 	let E = effects[k];
-	if(E.inheritFrom){
-	    s += E.name + '->' + E.inheritFrom +stylesToString('inheritArrow')+';\n';
-	}
+	if(E.inheritFrom)
+	    s += mkArr(E.name, E.inheritFrom, stylesToString('inheritArrow'));
     });
     s += '\n}\n';
     return s;
